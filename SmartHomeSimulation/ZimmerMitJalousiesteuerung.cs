@@ -1,10 +1,16 @@
 ﻿namespace M320_SmartHome {
+    /// <summary>
+    /// Diese Klasse dekoriert die entsprechenden Zimmer mit einer Jalousie
+    /// </summary>
     public class ZimmerMitJalousiesteuerung : ZimmerMitAktor {
         public ZimmerMitJalousiesteuerung(Zimmer zimmer) : base(zimmer) {
         }
 
         public bool JalousieHeruntergefahren { get; private set; }
-
+        /// <summary>
+        /// Öffnet oder schliesst die Jalousie
+        /// </summary>
+        /// <param name="wetterdaten">Nimmt Daten des Wettersensors als Parameter</param>
         public override void VerarbeiteWetterdaten(Wetterdaten wetterdaten) {
             if(wetterdaten.Aussentemperatur > this.Zimmer.Temperaturvorgabe) {
                 // Jalousie schliessen
