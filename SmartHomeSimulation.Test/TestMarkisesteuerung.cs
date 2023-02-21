@@ -15,9 +15,9 @@ namespace SmartHomeSimulation.Test
 
             wohnung.DesiredTemperature("Wintergarten", 20);
             wohnung.PersonsPresent("Wintergarten", false);
-            wohnung.GetWetterdaten(numberOfIterations);
 
             // Act
+            wohnung.GetWetterdaten(numberOfIterations);
             var wintergarten = wohnung.GetZimmer<ZimmerMitMarkisensteuerung>("Wintergarten");
 
             // Assert
@@ -34,9 +34,9 @@ namespace SmartHomeSimulation.Test
 
             wohnung.DesiredTemperature("Wintergarten", 20);
             wohnung.PersonsPresent("Wintergarten", false);
-            wohnung.GetWetterdaten(zeitdauerMinuten);
 
             // Act
+            wohnung.GetWetterdaten(zeitdauerMinuten);
             var wintergarten = wohnung.GetZimmer<ZimmerMitMarkisensteuerung>("Wintergarten");
 
             // Assert
@@ -53,9 +53,9 @@ namespace SmartHomeSimulation.Test
 
             wohnung.DesiredTemperature("Wintergarten", 20);
             wohnung.PersonsPresent("Wintergarten", false);
-            wohnung.GetWetterdaten(zeitdauerMinuten);
 
             // Act
+            wohnung.GetWetterdaten(zeitdauerMinuten);
             var wintergarten = wohnung.GetZimmer<ZimmerMitMarkisensteuerung>("Wintergarten");
 
             // Assert
@@ -72,9 +72,9 @@ namespace SmartHomeSimulation.Test
 
             wohnung.DesiredTemperature("Wintergarten", 20);
             wohnung.PersonsPresent("Wintergarten", false);
-            wohnung.GetWetterdaten(zeitdauerMinuten);
 
             // Act
+            wohnung.GetWetterdaten(zeitdauerMinuten);
             var wintergarten = wohnung.GetZimmer<ZimmerMitMarkisensteuerung>("Wintergarten");
 
             // Assert

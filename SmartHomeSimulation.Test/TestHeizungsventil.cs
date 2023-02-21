@@ -15,9 +15,9 @@ namespace SmartHomeSimulation.Test
 
             wohnung.DesiredTemperature("Küche", 20);
             wohnung.PersonsPresent("Küche", true);
-            wohnung.GetWetterdaten(numberOfIterations);
 
             // Act
+            wohnung.GetWetterdaten(numberOfIterations);
             var kueche = wohnung.GetZimmer<ZimmerMitHeizungsventil>("Küche");
 
             // Assert
@@ -34,9 +34,9 @@ namespace SmartHomeSimulation.Test
 
             wohnung.DesiredTemperature("Küche", 20);
             wohnung.PersonsPresent("Küche", true);
-            wohnung.GetWetterdaten(zeitdauerMinuten);
 
             // Act
+            wohnung.GetWetterdaten(zeitdauerMinuten);
             var kueche = wohnung.GetZimmer<ZimmerMitHeizungsventil>("Küche");
 
             // Assert
@@ -53,9 +53,9 @@ namespace SmartHomeSimulation.Test
 
             wohnung.DesiredTemperature("Küche", 20);
             wohnung.PersonsPresent("Küche", true);
-            wohnung.GetWetterdaten(zeitdauerMinuten);
 
             // Act
+            wohnung.GetWetterdaten(zeitdauerMinuten);
             var kueche = wohnung.GetZimmer<ZimmerMitHeizungsventil>("Küche");
 
             // Assert
@@ -72,9 +72,9 @@ namespace SmartHomeSimulation.Test
 
             wohnung.DesiredTemperature("Küche", 20);
             wohnung.PersonsPresent("Küche", true);
-            wohnung.GetWetterdaten(zeitdauerMinuten);
 
             // Act
+            wohnung.GetWetterdaten(zeitdauerMinuten);
             var kueche = wohnung.GetZimmer<ZimmerMitHeizungsventil>("Küche");
 
             // Assert
